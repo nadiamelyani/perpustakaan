@@ -17,7 +17,7 @@ public class Server extends ImplementBook {
          // Binding the remote object (stub) in the registry 
          Registry registry = LocateRegistry.getRegistry(); 
          
-         registry.bind("Hello", stub);  
+         registry.bind("Book", stub);  
          System.err.println("Server ready"); 
       } catch (Exception e) { 
          System.err.println("Server exception: " + e.toString()); 
